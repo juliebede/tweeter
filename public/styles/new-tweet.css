@@ -1,0 +1,32 @@
+.new-tweet form {
+  position: relative;
+  height: 100px;
+  top: 0px;
+}
+
+.new-tweet textarea {
+  position: absolute;
+  width: 100%;
+  height: 38px;
+  bottom: 50px;
+  background-color: transparent;
+  border: transparent;
+  border-bottom: 3px solid #545149;
+  font-weight: 600;
+}
+
+.new-tweet input {
+  position: absolute;
+  bottom: 10px;
+  background-color: #4056A1;
+  font-family: 'Bungee', sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+.counter {
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+  color: #545149;
+}
