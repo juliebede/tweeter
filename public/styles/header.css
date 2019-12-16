@@ -1,0 +1,27 @@
+header {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  background-color: orange;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+
+.avatar {
+  position: absolute;
+  top: 140px;
+  left: 50%;
+  margin-left: -100px;
+
+}
+
+.avatar img {
+  height: 75%;
+  width: 75%;
+}
+
+.name {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  margin-left: -100px;
+}

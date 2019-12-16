@@ -1,4 +1,4 @@
-body nav {
+nav {
   position: fixed;
   height: 120px;
   width: 100%;
@@ -7,7 +7,7 @@ body nav {
   padding: 1.5em;
 }
 
-body nav span{
+span{
   font-family: 'Bungee', cursive;
   color: #ffffff;
 }
