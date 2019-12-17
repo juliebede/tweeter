@@ -2,12 +2,28 @@ nav {
   position: fixed;
   height: 120px;
   width: 100%;
-  background-color: #4056A1;
+  background-color: #28B6A0;
   z-index: 2;
   padding: 1.5em;
 }
 
-span{
-  font-family: 'Bungee', cursive;
+.home {
+  position: absolute;
+  bottom: 20px;
+  font-family: 'Bungee';
   color: #ffffff;
+  font-size: 1cm;
+}
+
+nav div {
+  position: absolute;
+  right: 1.5em;
+  bottom: 40px;
+  font-size: 0.60cm;
+  color: #ffffff;
+}
+
+nav div span {
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 800;
 }

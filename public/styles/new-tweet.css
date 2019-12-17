@@ -1,7 +1,7 @@
 .new-tweet form {
   position: relative;
   height: 100px;
-  top: 0px;
+  top: -30px;
 }
 
 .new-tweet textarea {
@@ -12,13 +12,13 @@
   background-color: transparent;
   border: transparent;
   border-bottom: 3px solid #545149;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .new-tweet input {
   position: absolute;
   bottom: 10px;
-  background-color: #4056A1;
+  background-color: #28B6A0;
   font-family: 'Bungee', sans-serif;
   font-weight: 600;
   color: white;
@@ -29,4 +29,13 @@
   right: 0px;
   bottom: 10px;
   color: #545149;
+  font-family: 'Bungee', sans-serif;
+}
+
+.negativeCounter {
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+  color: red;
+  font-family: 'Bungee', sans-serif;
 }

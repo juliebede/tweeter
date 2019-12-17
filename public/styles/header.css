@@ -3,8 +3,8 @@ header {
   position: relative;
   height: 400px;
   width: 100%;
-  background-color: orange;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  background-color: #FFEB63; 
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
 .avatar {
@@ -25,4 +25,10 @@ header {
   top: 75%;
   left: 50%;
   margin-left: -100px;
+}
+
+.name span {
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 100;
+  color: #545149;
 }
