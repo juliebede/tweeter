@@ -18,9 +18,17 @@ nav {
 nav div {
   position: absolute;
   right: 1.5em;
-  bottom: 40px;
+  bottom: 55px;
   font-size: 0.60cm;
   color: #ffffff;
+}
+
+#arrow {
+  bottom: 13px;
+  font-size: 48px;
+  position: absolute;
+  right: 99px;
+  color: white;
 }
 
 nav div span {
