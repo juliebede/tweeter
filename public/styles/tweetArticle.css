@@ -1,0 +1,88 @@
+#tweetsContainer article {
+  position: relative;
+  height: 200px;
+  border: #545149 solid 3px;
+  margin-bottom: 2em;
+}
+
+#tweetsContainer .description {
+  border-bottom: #545149 solid 2px;
+  width: 95%;
+  position: absolute;
+  left: 2.5%;
+  top: 65%;
+}
+
+.description p {
+  position: absolute;
+  top: -67px;
+  left: 15px;
+  opacity: 80%;
+}
+
+#tweetsContainer article .tweetFooter {
+  position: absolute;
+  bottom: 22px;
+  left: 39px;
+  font-size: 16px;
+  width: 95%;
+}
+
+.icons {
+  position: absolute;
+  bottom: -14px;
+  right: 20px;
+  font-size: 24px;
+  color: #28B6A0;
+}
+
+.tweetHeader {
+  position: absolute;
+  top: 22px;
+  left: 2.5%;
+  font-size: 16px;
+  width: 95%
+}
+.headerAvatar {
+  position: absolute;
+  top: -7px;
+  left: 0%;
+  width: 48px;
+}
+
+.name {
+  position: absolute;
+  top: -16px;
+  left: 165px;
+  font-size: 22px;
+}
+
+.handle {
+  position: absolute;
+  top: -14px;
+  right: 2%;
+  font-size: 19px;
+  color: transparent;
+}
+
+.timestamp {
+  position: absolute;
+    left: 2px;
+    top: -55px;
+}
+
+#tweetsContainer article:hover {
+  box-shadow: 5px 5px 2px #FFEB63;
+}
+
+#tweetsContainer article:hover .handle {
+  color: lightslategrey;
+}
+
+#tweetsContainer article:hover .description p {
+  opacity: 100%;
+}
+
+
+
+

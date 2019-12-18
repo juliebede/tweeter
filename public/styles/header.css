@@ -1,4 +1,4 @@
-header {
+#mainHeader {
   z-index: 1;
   position: relative;
   height: 400px;
@@ -20,15 +20,15 @@ header {
   width: 75%;
 }
 
-.name {
+.myName {
   position: absolute;
   top: 75%;
   left: 50%;
   margin-left: -100px;
 }
 
-.name span {
+.myName span {
   font-family: Source Sans Pro, sans-serif;
-  font-weight: 100;
+  font-weight: lighter;
   color: #545149;
 }
