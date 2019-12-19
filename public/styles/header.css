@@ -8,8 +8,8 @@
 }
 
 .avatar {
-  position: absolute;
-  top: 140px;
+  position: relative;
+  top: 50px;
   left: 50%;
   margin-left: -100px;
 
@@ -33,9 +33,14 @@
   color: #545149;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
   #mainHeader {
-    
+    display: flex;
+    align-self: flex-start;
+    position: relative;
+    width: 30%;
+    height: 313px;
+    top: 300px;
+    margin-left: 1em;
   }
- 
 }
