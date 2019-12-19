@@ -19,3 +19,5 @@ Tweeter is a simple, single-page Twitter clone. Basically Twitter with a better 
 ## Screenshots 🤗 🎊
 
 !["Screenshot of page on initial load"](https://github.com/juliebede/tweeter/blob/master/docs/Tweets-view.png)
+!["Screenshot of making a a tweet"](https://github.com/juliebede/tweeter/blob/master/docs/Tweeting.png)
+!["Screenshot of smaller screen"](https://github.com/juliebede/tweeter/blob/master/docs/Small-view.png)
