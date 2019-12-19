@@ -23,19 +23,21 @@
 }
 
 #tweetsContainer article .tweetFooter {
-  position: absolute;
-  bottom: -5px;
-  left: 34px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 7em;
+  margin-left: 1em;
+  padding-left: 5px;
+  padding-right: 5px;
   font-size: 16px;
   width: 95%;
 }
 
 .icons {
-  position: absolute;
-  bottom: -17px;
-  right: 11px;
   font-size: 28px;
-  color: #28B6A0;
+  opacity: 0%;
 }
 
 .tweetHeader {
@@ -64,13 +66,7 @@
   top: -14px;
   right: 2%;
   font-size: 19px;
-  color: transparent;
-}
-
-.timestamp {
-  position: absolute;
-    left: -11px;
-    top: -60px;
+  opacity: 0%;
 }
 
 #tweetsContainer article:hover {
@@ -79,11 +75,32 @@
 
 #tweetsContainer article:hover .handle {
   color: lightslategrey;
+  opacity: 100%;
 }
 
 #tweetsContainer article:hover .description p {
   opacity: 100%;
 }
+
+#tweetsContainer article:hover .icons {
+  font-size: 28px;
+  color: #28B6A0;
+  opacity: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .icons {
+    opacity: 100%;
+    font-size: 28px;
+    color: #28B6A0;
+  }
+
+  .handle {
+    color: lightslategrey;
+    opacity: 100%;
+  }
+}
+
 
 
 

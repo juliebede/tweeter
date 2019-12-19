@@ -84,10 +84,13 @@ const createTweetElement = function(tweetObject) {
 }
 
 $(document).ready(function () {
+
+  $(this).find("#errorMessage").hide();
   
-  let $error = $(this).find("#errorMessage");
-  $error.hide();
+  const $tweetForm = $('.new-tweet')
+  $tweetForm.hide();
   
+
   const $tweetButton = $('#tweetForm');
   loadTweets();
   $tweetButton.submit(function( event ) {
@@ -118,8 +121,8 @@ $(document).ready(function () {
 
   // Slides the form up and down using arrow on top right
   const $formSlidingButton = $(document).find('#arrow');
+  
   $formSlidingButton.click(function(event) {
-    console.log('here')
     const form = $(this).parent()
                         .parent()
                         .parent()
@@ -127,6 +130,8 @@ $(document).ready(function () {
                         .find(".container")
                         .find(".new-tweet");
       $(form).slideToggle();
+      $(form).find("#tweet").focus();
+
     })
 });
 
