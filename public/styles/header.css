@@ -32,3 +32,10 @@
   font-weight: lighter;
   color: #545149;
 }
+
+@media only screen and (max-width: 1024px) {
+  #mainHeader {
+    
+  }
+ 
+}

@@ -55,3 +55,22 @@ nav div span {
   margin-right: 0.2em;
   font-weight: 800;
 }
+
+ /* Tablet: minimum width of 768px to maximum width of 1024px */
+@media only screen and (max-width: 768px) {
+  nav {
+    background-color: transparent
+  }
+
+  nav div {
+    color: #28B6A0;
+  }
+
+  #arrow {
+    color: #28B6A0;
+  }
+
+  .home {
+    color: #28B6A0;
+  }
+}
