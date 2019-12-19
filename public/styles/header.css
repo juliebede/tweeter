@@ -1,5 +1,9 @@
 #mainHeader {
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  z-index: 0;
   position: relative;
   height: 400px;
   width: 100%;
@@ -8,23 +12,19 @@
 }
 
 .avatar {
-  position: relative;
-  top: 50px;
-  left: 50%;
-  margin-left: -100px;
-
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
 }
 
 .avatar img {
-  height: 75%;
-  width: 75%;
+  height: 80%;
 }
 
 .myName {
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  margin-left: -96px;
+  display: flex;
+  justify-content: center;
+  margin-top: -4em;
 }
 
 .myName span {
@@ -35,12 +35,33 @@
 
 @media only screen and (min-width: 768px) {
   #mainHeader {
-    display: flex;
-    align-self: flex-start;
+    z-index: 1;
     position: relative;
     width: 30%;
     height: 313px;
     top: 300px;
     margin-left: 1em;
+  }
+
+  .avatar {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .avatar img {
+    height: 80%;
+  }
+  
+  .myName {
+    display: flex;
+    justify-content: center;
+    margin-top: -4em;
+  }
+  
+  .myName span {
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: lighter;
+    color: #545149;
   }
 }

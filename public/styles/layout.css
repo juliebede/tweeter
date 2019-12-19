@@ -29,20 +29,27 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
+ #flexcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   z-index: 1;
   position: relative;
   left: 5%;
+  width: 90%;
   /* width: 90vw; */
   margin-top: 1em;
   background-color: #F3F1EB;
  }
 
  @media only screen and (min-width: 768px) {
-   #flexcontainer {
-     display: flex;
-     flex-direction: row;
-   }
+
+  #flexcontainer {
+    display: flex;
+    flex-direction: row;
+  }
 
   .container {
     /* flex-direction: column; */

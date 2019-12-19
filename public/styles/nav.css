@@ -59,7 +59,8 @@ nav div span {
  /* Tablet: minimum width of 768px to maximum width of 1024px */
 @media only screen and (max-width: 768px) {
   nav {
-    background-color: transparent
+    background-color: #FFEB63;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   }
 
   nav div {
@@ -68,6 +69,10 @@ nav div span {
 
   #arrow {
     color: #28B6A0;
+  }
+
+  #arrow:hover {
+    color: #545149;
   }
 
   .home {
