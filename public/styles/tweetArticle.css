@@ -6,7 +6,6 @@
 }
 
 #tweetsContainer .description {
-  border-bottom: #545149 solid 2px;
   width: 95%;
   position: absolute;
   left: 2.5%;
@@ -15,24 +14,27 @@
 
 .description p {
   position: absolute;
-  top: -67px;
-  left: 15px;
+  top: -57px;
   opacity: 80%;
+  left: 1%;
+  right: 1%;
+  font-weight: 600;
+  font-size: 19px;
 }
 
 #tweetsContainer article .tweetFooter {
   position: absolute;
-  bottom: 22px;
-  left: 39px;
+  bottom: -5px;
+  left: 34px;
   font-size: 16px;
   width: 95%;
 }
 
 .icons {
   position: absolute;
-  bottom: -14px;
-  right: 20px;
-  font-size: 24px;
+  bottom: -17px;
+  right: 11px;
+  font-size: 28px;
   color: #28B6A0;
 }
 
@@ -67,8 +69,8 @@
 
 .timestamp {
   position: absolute;
-    left: 2px;
-    top: -55px;
+    left: -11px;
+    top: -60px;
 }
 
 #tweetsContainer article:hover {

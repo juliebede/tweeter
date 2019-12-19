@@ -40,8 +40,11 @@
   <!-- Top nav bar (fixed) -->
   <nav>
     <span class="home">tweeter</span>
-    <div><span>Write</span> a new tweet</div>
-    <div id="arrow">&#8650</div>
+    <div id='newTweet'>
+      <div><span>Write</span> a new tweet</div>
+      <div><button type="button" id="arrow">&#8650</button></div>
+    </div>
+
   </nav>
   <header id="mainHeader">
     <div class="avatar">
@@ -55,7 +58,7 @@
   <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
-      <h2>Compose Tweet</h2>
+      <section id="errorMessage">This is an error message</section>
       <form id="tweetForm" action="/tweets/">
         <textarea id="tweet" name="text" placeholder="What are you humming about?"></textarea>
         <input id="btn" type="submit" value="Tweet">

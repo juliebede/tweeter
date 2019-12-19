@@ -84,22 +84,24 @@ const createTweetElement = function(tweetObject) {
 }
 
 $(document).ready(function () {
-
-  loadTweets()
-
+  
+  let $error = $(this).find("#errorMessage");
+  $error.hide();
+  
   const $tweetButton = $('#tweetForm');
-
+  loadTweets();
   $tweetButton.submit(function( event ) {
-    console.log(`{ ${$tweetButton.serialize()} }`)
+    let $error = $($(this).parent()).find("#errorMessage");
+    $error.hide();
     const formButton = ($(this).find($("span")))
     event.preventDefault();
     if ($(formButton).text() < 0) {
-      let $error = $($(this).parent()).find("#errorMessage");
-      $error.text("Tweet is too long.")
+      $error.text("Tweet is too long. :(")
+      $error.slideDown();
     } else if ($(formButton).text() == 140) {
-      alert('Tweet is empty.')
+      $error.text('Tweet is empty :O')
+      $error.slideDown();
     } else {
-      console.log('julie')
       $.ajax({
         url: /tweets/, // url where to submit the request
         type : "POST", 
@@ -113,15 +115,16 @@ $(document).ready(function () {
     }
   });
 
+
   // Slides the form up and down using arrow on top right
   const $formSlidingButton = $(document).find('#arrow');
   $formSlidingButton.click(function(event) {
-    const form = $(this).parent().siblings(".container").find(".new-tweet");
-    if ($(form).attr("style") === "display: none;") {
-      $(form).slideDown();
-    } else {
-      $(form).slideUp();
-    }
-  })
+    console.log('here')
+    const form = $(this).parent()
+                        .parent()
+                        .parent()
+                        .siblings(".container").find(".new-tweet");
+      $(form).slideToggle();
+    })
 });
 

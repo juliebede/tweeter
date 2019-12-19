@@ -1,5 +1,7 @@
 nav {
   position: fixed;
+  display: flex;
+  justify-content: space-between;
   height: 120px;
   width: 100%;
   background-color: #28B6A0;
@@ -8,30 +10,48 @@ nav {
 }
 
 .home {
-  position: absolute;
-  bottom: 20px;
   font-family: 'Bungee';
   color: #ffffff;
-  font-size: 1cm;
+  font-size: 1.75em;
+}
+
+#newTweet {
+  display: flex;
+  align-self: flex-end;
+  flex-direction: column;
+  position: relative;
+  top: 44px;
 }
 
 nav div {
-  position: absolute;
-  right: 1.5em;
-  bottom: 55px;
-  font-size: 0.60cm;
+  display: flex;
+  font-size: 24px;
   color: #ffffff;
 }
 
 #arrow {
-  bottom: 13px;
+  display: flex;
   font-size: 48px;
-  position: absolute;
-  right: 99px;
+  background-color: transparent;
+  border: transparent;
   color: white;
+  position: relative;
+  left: 1.50em;
+  top: -.25em;
+}
+
+button:focus {
+  outline: 0;
+}
+
+#arrow:hover {
+  color: #FFEB63;
 }
 
 nav div span {
+  display: flex;
+  justify-content: center;
   font-family: Source Sans Pro, sans-serif;
+  margin-right: 0.2em;
   font-weight: 800;
 }

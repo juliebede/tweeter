@@ -1,7 +1,21 @@
+.new-tweet {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
 .new-tweet form {
   position: relative;
   height: 100px;
-  top: -30px;
+  top: -4px;
+}
+
+#errorMessage {
+    margin: -24px;
+    position: absolute;
+    left: 44%;
+    top: 15px;
+    color: red;
+    font-weight: 600;
 }
 
 .new-tweet textarea {
