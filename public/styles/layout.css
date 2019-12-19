@@ -31,9 +31,22 @@ body {
 
 .container {
   z-index: 1;
-   position: absolute;
-   left: 5%;
-   width: 90%;
-   margin-top: 1em;
-   background-color: #F3F1EB;
+  position: relative;
+  left: 5%;
+  /* width: 90vw; */
+  margin-top: 1em;
+  background-color: #F3F1EB;
  }
+
+ @media only screen and (min-width: 768px) {
+   #flexcontainer {
+     display: flex;
+     flex-direction: row;
+   }
+
+  .container {
+    /* flex-direction: column; */
+    width: 60%;
+    top: 120px;
+  }
+}

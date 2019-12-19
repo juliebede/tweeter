@@ -123,7 +123,9 @@ $(document).ready(function () {
     const form = $(this).parent()
                         .parent()
                         .parent()
-                        .siblings(".container").find(".new-tweet");
+                        .siblings("#flexcontainer")
+                        .find(".container")
+                        .find(".new-tweet");
       $(form).slideToggle();
     })
 });
