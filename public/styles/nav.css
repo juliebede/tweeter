@@ -4,13 +4,13 @@ nav {
   justify-content: space-between;
   height: 120px;
   width: 100%;
-  background-color: #28B6A0;
+  background-color: #28b6a0;
   z-index: 2;
   padding: 1.5em;
 }
 
 .home {
-  font-family: 'Bungee';
+  font-family: "Bungee";
   color: #ffffff;
   font-size: 1.75em;
 }
@@ -36,8 +36,8 @@ nav div {
   border: transparent;
   color: white;
   position: relative;
-  left: 1.50em;
-  top: -.25em;
+  left: 1.5em;
+  top: -0.25em;
 }
 
 button:focus {
@@ -45,7 +45,7 @@ button:focus {
 }
 
 #arrow:hover {
-  color: #FFEB63;
+  color: #ffeb63;
 }
 
 nav div span {
@@ -56,19 +56,19 @@ nav div span {
   font-weight: 800;
 }
 
- /* Tablet: minimum width of 768px to maximum width of 1024px */
+/* Fullscreen mode */
 @media only screen and (max-width: 768px) {
   nav {
-    background-color: #FFEB63;
+    background-color: #ffeb63;
     background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   }
 
   nav div {
-    color: #28B6A0;
+    color: #28b6a0;
   }
 
   #arrow {
-    color: #28B6A0;
+    color: #28b6a0;
   }
 
   #arrow:hover {
@@ -76,6 +76,6 @@ nav div span {
   }
 
   .home {
-    color: #28B6A0;
+    color: #28b6a0;
   }
 }
